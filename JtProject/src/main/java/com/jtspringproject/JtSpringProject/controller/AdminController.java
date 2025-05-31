@@ -46,7 +46,7 @@ public class AdminController {
 	public String index(Model model) {
 		String username = SecurityContextHolder.getContext().getAuthentication().getName();
 		model.addAttribute("username", username);
-		System.out.print("name of the user:" + username);
+		System.out.print("username::" + username);
 		return "index";			
 	}
 	
